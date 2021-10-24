@@ -86,6 +86,10 @@ namespace PaymentAPIMysql
             {
                 endpoints.MapControllers();
             });
+
+            //heroku
+            app.UseDefaultFiles();
+            app.UseStaticFiles();
         }
     }
 }
